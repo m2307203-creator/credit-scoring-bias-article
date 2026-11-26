@@ -1,3 +1,10 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
 # Build artifacts
 *.aux
 *.log
@@ -19,6 +26,7 @@ dist/
 
 # OS / editor
 .DS_Store
+Thumbs.db
 *.swp
 *~
 .idea/

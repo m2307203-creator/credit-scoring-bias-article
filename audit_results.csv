@@ -1,0 +1,81 @@
+scenario,seed,method,precision,recall,fpr,n_flagged,flagged
+Контроль,2026,Корреляция (MI),0.0,,0.047619047619047616,1,num_dependents
+Контроль,2026,SHAP,,,0.0,0,
+Контроль,2026,LIME,,,0.0,0,
+Контроль,2026,SHAP ∩ LIME,,,0.0,0,
+Контроль,2027,Корреляция (MI),0.0,,0.047619047619047616,1,age
+Контроль,2027,SHAP,,,0.0,0,
+Контроль,2027,LIME,,,0.0,0,
+Контроль,2027,SHAP ∩ LIME,,,0.0,0,
+Контроль,2028,Корреляция (MI),,,0.0,0,
+Контроль,2028,SHAP,,,0.0,0,
+Контроль,2028,LIME,,,0.0,0,
+Контроль,2028,SHAP ∩ LIME,,,0.0,0,
+Контроль,2029,Корреляция (MI),0.0,,0.14285714285714285,3,"age, num_dependents, housing"
+Контроль,2029,SHAP,0.0,,0.047619047619047616,1,age
+Контроль,2029,LIME,,,0.0,0,
+Контроль,2029,SHAP ∩ LIME,,,0.0,0,
+Контроль,2030,Корреляция (MI),0.0,,0.09523809523809523,2,"age, num_dependents"
+Контроль,2030,SHAP,0.0,,0.047619047619047616,1,age
+Контроль,2030,LIME,0.0,,0.09523809523809523,2,"age, num_dependents"
+Контроль,2030,SHAP ∩ LIME,0.0,,0.047619047619047616,1,age
+Слабая связь,2026,Корреляция (MI),0.3333333333333333,1.0,0.17391304347826086,6,"duration, age, proxy_used_1, proxy_used_2, proxy_decoy_1, proxy_decoy_2"
+Слабая связь,2026,SHAP,0.6666666666666666,1.0,0.043478260869565216,3,"age, proxy_used_1, proxy_used_2"
+Слабая связь,2026,LIME,0.5,0.5,0.043478260869565216,2,"age, proxy_used_2"
+Слабая связь,2026,SHAP ∩ LIME,0.5,0.5,0.043478260869565216,2,"age, proxy_used_2"
+Слабая связь,2027,Корреляция (MI),0.4,1.0,0.13043478260869565,5,"num_dependents, proxy_used_1, proxy_used_2, proxy_decoy_1, proxy_decoy_2"
+Слабая связь,2027,SHAP,0.5,0.5,0.043478260869565216,2,"num_dependents, proxy_used_1"
+Слабая связь,2027,LIME,1.0,0.5,0.0,1,proxy_used_1
+Слабая связь,2027,SHAP ∩ LIME,1.0,0.5,0.0,1,proxy_used_1
+Слабая связь,2028,Корреляция (MI),0.3333333333333333,1.0,0.17391304347826086,6,"installment_commitment, age, proxy_used_1, proxy_used_2, proxy_decoy_1, proxy_decoy_2"
+Слабая связь,2028,SHAP,1.0,1.0,0.0,2,"proxy_used_1, proxy_used_2"
+Слабая связь,2028,LIME,1.0,1.0,0.0,2,"proxy_used_1, proxy_used_2"
+Слабая связь,2028,SHAP ∩ LIME,1.0,1.0,0.0,2,"proxy_used_1, proxy_used_2"
+Слабая связь,2029,Корреляция (MI),0.4,1.0,0.13043478260869565,5,"age, proxy_used_1, proxy_used_2, proxy_decoy_1, proxy_decoy_2"
+Слабая связь,2029,SHAP,1.0,1.0,0.0,2,"proxy_used_1, proxy_used_2"
+Слабая связь,2029,LIME,1.0,1.0,0.0,2,"proxy_used_1, proxy_used_2"
+Слабая связь,2029,SHAP ∩ LIME,1.0,1.0,0.0,2,"proxy_used_1, proxy_used_2"
+Слабая связь,2030,Корреляция (MI),0.5,1.0,0.08695652173913043,4,"proxy_used_1, proxy_used_2, proxy_decoy_1, proxy_decoy_2"
+Слабая связь,2030,SHAP,1.0,1.0,0.0,2,"proxy_used_1, proxy_used_2"
+Слабая связь,2030,LIME,1.0,1.0,0.0,2,"proxy_used_1, proxy_used_2"
+Слабая связь,2030,SHAP ∩ LIME,1.0,1.0,0.0,2,"proxy_used_1, proxy_used_2"
+Умеренная связь,2026,Корреляция (MI),0.5,1.0,0.13043478260869565,6,"age, proxy_used_1, proxy_used_2, proxy_used_3, proxy_decoy_1, proxy_decoy_2"
+Умеренная связь,2026,SHAP,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Умеренная связь,2026,LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Умеренная связь,2026,SHAP ∩ LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Умеренная связь,2027,Корреляция (MI),0.5,1.0,0.13043478260869565,6,"num_dependents, proxy_used_1, proxy_used_2, proxy_used_3, proxy_decoy_1, proxy_decoy_2"
+Умеренная связь,2027,SHAP,1.0,0.6666666666666666,0.0,2,"proxy_used_1, proxy_used_2"
+Умеренная связь,2027,LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Умеренная связь,2027,SHAP ∩ LIME,1.0,0.6666666666666666,0.0,2,"proxy_used_1, proxy_used_2"
+Умеренная связь,2028,Корреляция (MI),0.6,1.0,0.08695652173913043,5,"proxy_used_1, proxy_used_2, proxy_used_3, proxy_decoy_1, proxy_decoy_2"
+Умеренная связь,2028,SHAP,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Умеренная связь,2028,LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Умеренная связь,2028,SHAP ∩ LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Умеренная связь,2029,Корреляция (MI),0.5,1.0,0.13043478260869565,6,"age, proxy_used_1, proxy_used_2, proxy_used_3, proxy_decoy_1, proxy_decoy_2"
+Умеренная связь,2029,SHAP,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Умеренная связь,2029,LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Умеренная связь,2029,SHAP ∩ LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Умеренная связь,2030,Корреляция (MI),0.6,1.0,0.08695652173913043,5,"proxy_used_1, proxy_used_2, proxy_used_3, proxy_decoy_1, proxy_decoy_2"
+Умеренная связь,2030,SHAP,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Умеренная связь,2030,LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Умеренная связь,2030,SHAP ∩ LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Сильная связь,2026,Корреляция (MI),0.5,1.0,0.13043478260869565,6,"age, proxy_used_1, proxy_used_2, proxy_used_3, proxy_decoy_1, proxy_decoy_2"
+Сильная связь,2026,SHAP,0.75,1.0,0.043478260869565216,4,"age, proxy_used_1, proxy_used_2, proxy_used_3"
+Сильная связь,2026,LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Сильная связь,2026,SHAP ∩ LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Сильная связь,2027,Корреляция (MI),0.5,1.0,0.13043478260869565,6,"num_dependents, proxy_used_1, proxy_used_2, proxy_used_3, proxy_decoy_1, proxy_decoy_2"
+Сильная связь,2027,SHAP,0.75,1.0,0.043478260869565216,4,"num_dependents, proxy_used_1, proxy_used_2, proxy_used_3"
+Сильная связь,2027,LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Сильная связь,2027,SHAP ∩ LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Сильная связь,2028,Корреляция (MI),0.6,1.0,0.08695652173913043,5,"proxy_used_1, proxy_used_2, proxy_used_3, proxy_decoy_1, proxy_decoy_2"
+Сильная связь,2028,SHAP,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Сильная связь,2028,LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Сильная связь,2028,SHAP ∩ LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Сильная связь,2029,Корреляция (MI),0.5,1.0,0.13043478260869565,6,"age, proxy_used_1, proxy_used_2, proxy_used_3, proxy_decoy_1, proxy_decoy_2"
+Сильная связь,2029,SHAP,0.75,1.0,0.043478260869565216,4,"age, proxy_used_1, proxy_used_2, proxy_used_3"
+Сильная связь,2029,LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Сильная связь,2029,SHAP ∩ LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Сильная связь,2030,Корреляция (MI),0.6,1.0,0.08695652173913043,5,"proxy_used_1, proxy_used_2, proxy_used_3, proxy_decoy_1, proxy_decoy_2"
+Сильная связь,2030,SHAP,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Сильная связь,2030,LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
+Сильная связь,2030,SHAP ∩ LIME,1.0,1.0,0.0,3,"proxy_used_1, proxy_used_2, proxy_used_3"
